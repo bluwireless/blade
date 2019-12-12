@@ -41,29 +41,29 @@
           - !Enum [idle,     1, "Enabled but not busy"]
           - !Enum [busy,     2, "Enabled and actively consuming data"]
           - !Enum [error,    3, "Hit an error case, waiting to be reset"]
-    - !Reg
-      name       : control
-      align      : 8
-      blockaccess: AW
-      fields     :
-      - !Field
-        name : start
-        width: 2
-        sd   : Activate a channel by writing its ID
-      - !Field
-        name : stop
-        width: 2
-        sd   : Stop a channel by writing its ID
-    - !Reg
-      name   : my_interrupt_input
-      options: [EVENT, HAS_LEVEL, HAS_MODE]
-      fields :
-      ...
-    - !Reg
-      name   : my_setclear
-      options: [SETCLEAR]
-      fields :
-      ...
+      - !Reg
+        name       : control
+        align      : 8
+        blockaccess: AW
+        fields     :
+        - !Field
+          name : start
+          width: 2
+          sd   : Activate a channel by writing its ID
+        - !Field
+          name : stop
+          width: 2
+          sd   : Stop a channel by writing its ID
+      - !Reg
+        name   : my_interrupt_input
+        options: [EVENT, HAS_LEVEL, HAS_MODE]
+        fields :
+        ...
+      - !Reg
+        name   : my_setclear
+        options: [SETCLEAR]
+        fields :
+        ...
 """
 
 from .ph_tag_base import TagBase, ValidationError, CONSTANTS

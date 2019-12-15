@@ -23,4 +23,4 @@ python:
       extra_requirements:
         - documentation
     - method: setuptools
-      path: blu-blade
+      path: .

@@ -54,7 +54,6 @@ setup(
         'pyyaml',
         'mako',
         'tqdm',
-        'designformat',
     ],
     extras_require={
         "documentation": [

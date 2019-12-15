@@ -35,6 +35,7 @@ setup(
     project_urls={
         'Source': 'https://github.com/bluwireless/blade',
         'Tracker': 'https://github.com/bluwireless/blade/issues',
+        'Documentation': 'https://blu-blade.readthedocs.io/en/latest',
     },
     packages=[
         'blade', 'blade.checkers', 'blade.elaborate', 'blade.preprocessor',

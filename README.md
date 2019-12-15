@@ -2,6 +2,24 @@
 
 ---
 
+<p align="center">
+    Hardware Design, Exploration, and Code Generation for SoC Designers
+    <br>
+    <a href="https://blu-blade.readthedocs.io/en/latest">Documentation</a>
+    &bull;
+    <a href="https://pypi.org/project/blu-blade/">PyPI Package</a>
+    &bull;
+    <a href="https://github.com/bluwireless/blade-examples">Examples</a>
+</p>
+
+---
+
+<p align="center">
+    <img src="https://readthedocs.org/projects/blu-blade/badge/?version=latest" />
+</p>
+
+---
+
 BLADE is a tool for generating hierarchical hardware designs from a YAML based input syntax. It allows front-end designers to work like IP integrators from day one, with the ability to describe blocks, interconnections, register and address maps and more with strict type checking and high-level design rule checks.
 
 When BLADE executes, it produces a DesignFormat blob describing the hardware - this interchange format, which is based on JSON, can drive templating engines, GUIs, CLIs and more. The whole process is agnostic of the design implementation language used, so templates can be easily crafted to work with development flows in SystemC, Verilog, VHDL, and more.

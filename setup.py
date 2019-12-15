@@ -16,16 +16,26 @@
 # BLADE.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-from distutils.core import setup
+from setuptools import setup
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
-    name="BLADE",
+    name="blu-blade",
     version="1.0",
-    license=['GNU General Public License v3.0'],
+    license='GNU General Public License v3.0',
     description=
-        "Hardware Architecture and Implementation Autogeneration for SoC Designers"
+        "Hardware Design, Exploration, and Code Generation for SoC Designers"
     ,
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Blu Wireless Ltd',
+    url='https://www.bluwireless.com',
+    project_urls={
+        'Source': 'https://github.com/bluwireless/blade',
+        'Tracker': 'https://github.com/bluwireless/blade/issues',
+    },
     packages=[
         'blade', 'blade.checkers', 'blade.elaborate', 'blade.preprocessor',
         'blade.reporting', 'blade.schema',

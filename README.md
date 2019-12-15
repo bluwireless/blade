@@ -60,6 +60,13 @@ The following dependencies are not mandatory, but are required for building the 
 $> pip install sphinx recommonmark sphinx-markdown-tables sphinx-rtd-theme
 ```
 
+## Installing from PyPI
+You can install BLADE with its dependencies direct from PyPI:
+
+```bash
+$> pip install blu-blade
+```
+
 ## Building Your First Design
 The best way to test your installation is to clone a copy of the [BLADE Examples](https://github.com/bluwireless/blade-examples) which demonstrate how to use the tool in a flow that generates RTL. Perhaps start with the [basic timer](https://github.com/bluwireless/blade-examples/tree/master/designs/basic_timer) tutorial and see how the hierarchy, registers, and wiring have been put together.
 
